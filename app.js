@@ -173,7 +173,9 @@ console.log('Exercise 4 correct result: ', {
 // 👩🏻‍💻 Exercise 5: Array.prototype.map()
 
 let firstLast = people.map(function(switchName) {
+
     let names = switchName.split(', ');
+    
     return names[1] + ' ' + names[0];
 });
 
@@ -221,3 +223,33 @@ console.log('Exercise 5 correct result: ', [
   'Tony Blair',
   'William Blake',
 ]);
+
+// 👩🏻‍💻 Exercise 6: Array.prototype.some()
+
+// let isAdultPresent = null;
+
+//people who are 18 born in 2008 and before 2008 who are older than 18 
+
+let isAdultPresent = devs.some(function(adult){
+
+    return adult.year <= 2026 - 18; 
+})
+
+// Check your work:
+console.log('Exercise 6 my result: ', isAdultPresent);
+console.log('Exercise 6 correct result: ', true);
+
+
+// 👩🏻‍💻 Exercise 7: Array.prototype.every()
+
+let isEveryone19OrOlder = devs.every(function(ninteen){
+
+    return (2026 -ninteen.year)  >= 19;
+
+
+})
+
+
+// Check your work:
+console.log('Exercise 7 my result: ', isEveryone19OrOlder);
+console.log('Exercise 7 correct result: ', false);
