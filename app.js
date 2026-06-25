@@ -253,3 +253,28 @@ let isEveryone19OrOlder = devs.every(function(ninteen){
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder);
 console.log('Exercise 7 correct result: ', false);
+
+// 👩🏻‍💻 Exercise 8: Array.prototype.find()
+
+let commentById = comments.find (function(comment){
+
+    return comment.id === 823423;
+})
+
+// Check your work:
+console.log('Exercise 8 my result: ', commentById);
+console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 });
+
+
+// 👩🏻‍💻 Exercise 9: Array.prototype.findIndex()
+
+let idx = comments.findIndex(function(index){
+
+    return index.id === 123523;
+})
+
+
+// Check your work:
+console.log('Exercise 9 my result: ', idx);
+console.log('Exercise 9 correct result: ', 3);
+
